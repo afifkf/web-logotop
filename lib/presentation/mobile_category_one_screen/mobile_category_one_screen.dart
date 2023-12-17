@@ -226,7 +226,7 @@ class MobileCategoryOneScreen extends StatelessWidget {
                             padding: EdgeInsets.only(left: 59.h),
                             child: _buildArrowRightFifteenSection(
                               context,
-                              medical: "Fashion",
+                              medicalText: "Fashion",
                             ),
                           ),
                           SizedBox(height: 13.v),
@@ -576,7 +576,7 @@ class MobileCategoryOneScreen extends StatelessWidget {
             padding: EdgeInsets.only(left: 12.h),
             child: _buildArrowRightFifteenSection(
               context,
-              medical: "Medical",
+              medicalText: "Medical",
             ),
           ),
           SizedBox(height: 14.v),
@@ -741,7 +741,7 @@ class MobileCategoryOneScreen extends StatelessWidget {
   /// Common widget
   Widget _buildArrowRightFifteenSection(
     BuildContext context, {
-    required String medical,
+    required String medicalText,
   }) {
     return Row(
       children: [
@@ -753,7 +753,7 @@ class MobileCategoryOneScreen extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(left: 25.h),
           child: Text(
-            medical,
+            medicalText,
             style: theme.textTheme.titleLarge!.copyWith(
               color: appTheme.black900,
             ),
